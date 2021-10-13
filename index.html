@@ -3,11 +3,7 @@
 
 <head>
 
-
-      
-      
-
-
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
 
         <style>
             
@@ -16,19 +12,30 @@
                 margin: 0;
             }
 
+            /* Top Division */
+
+            .topdivision{
+                display: flex;
+            }
+
             .headerbox{
                 background-color: #FFB45C;
-                height: max-content;
+                height: 85px;
                 text-align: center;
-                margin-top: -15px;
-                margin-left: 25%;
-                margin-right: 25%;
+                margin-left: 28%;
                 border-radius: 5%;
+                margin-top: -1%;
             }
 
             .headerboxheading{
-                margin-top:-55px;
+                margin-top: 15px;
                 font-size: 50px;
+            }
+
+            .cameraposition
+            {
+               margin-left: 380px;
+                margin-top:45px;
             }
 
 
@@ -124,7 +131,7 @@
                 display: inline-flex;
             }
 
-            .subdivision11{
+            #subdivision11{
                 background-color: #FFB45C;
                 margin-left: 50px;
                 margin-right: 30px;
@@ -135,12 +142,13 @@
             }
 
             .subdivision11inner{
-                margin-left:25px;
-                margin-top: 10px;
+                margin-left:60px;
+                margin-top: 50px;
             }
 
             .subdivision11buttons{
                 margin-left: 95px;
+                margin-top:20px;
                 display: inline-flex;
             }
 
@@ -154,7 +162,7 @@
             }
 
 
-            .subdivision12{
+            #subdivision12{
                 background-color: #FFB45C;
                 margin-left: 50px;
                 margin-right: 30px;
@@ -165,13 +173,15 @@
             }
 
             .subdivision12inner{
-                margin-left:25px;
-                margin-top: 10px;
+                margin-left:70px;
+                margin-top: 55px;
             }
 
             .subdivision12buttons{
                 margin-left: 95px;
+                margin-top: 15px;
                 display: inline-flex;
+            
             }
 
             .subdivision12red{
@@ -183,7 +193,7 @@
                 color:green;
             }
 
-            .subdivision13{
+            #subdivision13{
                 background-color: #FFB45C;
                 margin-left: 50px;
                 margin-right: 30px;
@@ -193,8 +203,8 @@
 
             }
             .subdivision13inner{
-                margin-left:45px;
-                margin-top: 20px;
+                margin-left:70px;
+                margin-top: 55px;
             }
 
             .subdivision13buttons{
@@ -216,7 +226,7 @@
                 margin-top: 50px;
                 display: inline-flex;
             }
-            .subdivision21{
+            #subdivision21{
                 background-color: #FFB45C;
                 margin-left: 50px;
                 margin-right: 30px;
@@ -226,12 +236,13 @@
 
             }
             .subdivision21inner{
-                margin-left:25px;
-                margin-top: 10px;
+                margin-left:80px;
+                margin-top: 45px;
             }
 
             .subdivision21buttons{
                 margin-left: 95px;
+                margin-top:25px;
                 display: inline-flex;
             }
 
@@ -245,7 +256,7 @@
             }
 
 
-            .subdivision22{
+            #subdivision22{
                 background-color: #FFB45C;
                 margin-left: 50px;
                 margin-right: 30px;
@@ -255,12 +266,13 @@
 
             }
             .subdivision22inner{
-                margin-left:25px;
-                margin-top: 10px;
+                margin-left:80px;
+                margin-top: 45px;
             }
 
             .subdivision22buttons{
                 margin-left: 95px;
+                margin-top:25px;
                 display: inline-flex;
             }
 
@@ -273,7 +285,7 @@
                 color:green;
             }
 
-            .subdivision23{
+            #subdivision23{
                 background-color: #FFB45C;
                 margin-left: 50px;
                 margin-right: 30px;
@@ -290,14 +302,14 @@
             }
 
             .subdivision23inner{
-                margin-top: 10px;
+                margin-left:20px;
+                margin-top: 45px;
             }
 
             meter {
-            margin-top:90px;
-            width: 400px;
-            height: 40px;
-            margin-left: -30px;
+            margin-top:100px;
+            width: 100px;
+            height: 30px;
             transform: rotate(270deg);
             }
 
@@ -307,8 +319,8 @@
 
 
             .subdivision23buttons{
-                margin-top: 5px;
                 margin-left: 95px;
+                margin-top:25px;
                 display: inline-flex;
             }
 
@@ -333,12 +345,20 @@
 <body style="background-color:#FBE46E">
 
 
-    <div class="headerbox">
-        <div class="headerboxheading">
-            <p>Home Automation DashBoard</p1>
+    <div class="topdivision">
+        <div class="headerbox">
+            <p class="headerboxheading">Home Automation DashBoard</p1>
         </div>
+    
+        <div class="cameraposition">
+            <!-- <img src="images/cc_camera.png" alt="Clock Image" width="100" height="100"> -->
+            <i class="fas fa-video fa-3x"></i>
+        </div> 
     </div>
 
+    
+
+    
 
 
     <!-- Divisions for clockdivision and componentdivision -->
@@ -348,7 +368,8 @@
         <div class="clocksidedivision">
            
            <div class="clockposition">
-            <img src="images/clock.png" alt="Clock Image" width="150" height="150">
+            <!-- <img src="images/clock.png" alt="Clock Image" width="150" height="150"> -->
+            <i class="far fa-clock fa-9x"></i>
            </div> 
 
            <div class="timeposition">
@@ -382,57 +403,76 @@
         <!-- Components division for the right portion of the webpage : Fans, Lights etx -->
         <div class="componentssidedivision">
             
-            <div class="subdivision1">
+            <div class="subdivision1" id="abcd">
 
-                <div class="subdivision11">
-                    <img src="images/fan.png" alt="Clock Image" width="200" height="200" class="subdivision11inner">     
+                <div id="subdivision11">
+                    <!-- <img src="images/fan.png" alt="Clock Image" width="200" height="200" class="subdivision11inner">      -->
+                    <div class="subdivision11inner">
+                        <i class="fas fa-fan fa-9x"></i>
+                    </div>
                     <div class="subdivision11buttons">
-                        <span class="subdivision11red"><i class="fas fa-circle fa-lg"></i></span>
-                        <span class="subdivision11green"><i class="fas fa-circle fa-lg"></i></span>
+                        <span onclick="stopfan1()" class="subdivision11red"><i class="fas fa-circle fa-lg"></i></span>
+                        <span onclick="startfan1()" class="subdivision11green"><i class="fas fa-circle fa-lg"></i></span>
                     </div>       
                 </div>
 
-                <div class="subdivision12">
-                    <img src="images/fridge.png" alt="Clock Image" width="200" height="200" class="subdivision12inner"> 
+                <div id="subdivision12">
+                    <!-- <img src="images/fridge.png" alt="Clock Image" width="200" height="200" class="subdivision12inner">  -->
+                    <div class="subdivision12inner">
+                        <i class="fas fa-refrigerator fa-9x"></i>
+                    </div>
                     <div class="subdivision12buttons">
-                        <span class="subdivision12red"><i class="fas fa-circle fa-lg"></i></span>
-                        <span class="subdivision12green"><i class="fas fa-circle fa-lg"></i></span>
+                        <span onclick="stopfridge()" class="subdivision12red"><i class="fas fa-circle fa-lg"></i></span>
+                        <span onclick="startfridge()" class="subdivision12green"><i class="fas fa-circle fa-lg"></i></span>
                     </div>
                 </div>
 
-                <div class="subdivision13">
-                    <img src="images/table_fan.png" alt="Clock Image" width="180" height="180" class="subdivision13inner"> 
+                <div id="subdivision13">
+                    <!-- <img src="images/table_fan.png" alt="Clock Image" width="180" height="180" class="subdivision13inner">  -->
+                    <div class="subdivision13inner">
+                        <i class="fas fa-fan-table fa-9x"></i>
+                    </div>
                     <div class="subdivision13buttons">
-                        <span class="subdivision13red"><i class="fas fa-circle fa-lg"></i></span>
-                        <span class="subdivision13green"><i class="fas fa-circle fa-lg"></i></span>
+                        <span onclick="stopfan2()" class="subdivision13red"><i class="fas fa-circle fa-lg"></i></span>
+                        <span onclick="startfan2()"class="subdivision13green"><i class="fas fa-circle fa-lg"></i></span>
                     </div>
                 </div>
 
             </div>
             
             <div class="subdivision2">
-                <div class="subdivision21">
-                    <img src="images/bulb.png" alt="Clock Image" width="200" height="200" class="subdivision21inner"> 
+                <div id="subdivision21">
+                    <!-- <img src="images/bulb.png" alt="Clock Image" width="200" height="200" class="subdivision21inner">  -->
+                    <div class="subdivision21inner">
+                        <i class="fas fa-lightbulb fa-9x"></i>
+                    </div>
+
                     <div class="subdivision21buttons">
-                        <span class="subdivision21red"><i class="fas fa-circle fa-lg"></i></span>
-                        <span class="subdivision21green"><i class="fas fa-circle fa-lg"></i></span>
+                        <span onclick="stoplight1()" class="subdivision21red"><i class="fas fa-circle fa-lg"></i></span>
+                        <span onclick="startlight1()"class="subdivision21green"><i class="fas fa-circle fa-lg"></i></span>
                     </div>
                 </div>
-                <div class="subdivision22">
-                    <img src="images/bulb.png" alt="Clock Image" width="200" height="200" class="subdivision22inner"> 
+                <div id="subdivision22">
+                    <!-- <img src="images/bulb.png" alt="Clock Image" width="200" height="200" class="subdivision22inner">  -->
+                    <div class="subdivision22inner">
+                        <i class="fas fa-lightbulb fa-9x"></i>
+                    </div>
                     <div class="subdivision22buttons">
-                        <span class="subdivision22red"><i class="fas fa-circle fa-lg"></i></span>
-                        <span class="subdivision22green"><i class="fas fa-circle fa-lg"></i></span>
+                        <span onclick="stoplight2()" class="subdivision22red"><i class="fas fa-circle fa-lg"></i></span>
+                        <span onclick="startlight2()"class="subdivision22green"><i class="fas fa-circle fa-lg"></i></span>
                     </div>
                 </div>
-                <div class="subdivision23">
+                <div id="subdivision23">
                     <div class="subdivision23flex">
-                        <img src="images/water_tank.png" alt="Clock Image" width="200" height="200" class="subdivision23inner"> 
+                        <!-- <img src="images/water_tank.png" alt="Clock Image" width="200" height="200" class="subdivision23inner">  -->
+                        <div class="subdivision23inner">
+                            <i class="fas fa-water-lower fa-9x"></i>
+                        </div>
                         <meter id="replacelevelhere" min="0" low="40" high="95" max="100" value="80"></meter>
                     </div>
                     <div class="subdivision23buttons">
-                        <span class="subdivision23red"><i class="fas fa-circle fa-lg"></i></span>
-                        <span class="subdivision23green"><i class="fas fa-circle fa-lg"></i></span>
+                        <span onclick="stoptank()" class="subdivision23red"><i class="fas fa-circle fa-lg"></i></span>
+                        <span onclick="starttank()" class="subdivision23green"><i class="fas fa-circle fa-lg"></i></span>
                     </div>
                     
                     
@@ -495,11 +535,81 @@
 
         setInterval(getTime,1000);
 
+
+        function startfan1()
+        {
+            document.getElementById("subdivision11").style.backgroundColor="#32CD32";
+        }
+
+        function stopfan1()
+        {
+            document.getElementById("subdivision11").style.backgroundColor = "#FFB45C";
+        }
+
+
+        function startfridge()
+        {
+            document.getElementById("subdivision12").style.backgroundColor="#32CD32";
+        }
+
+        function stopfridge()
+        {
+            document.getElementById("subdivision12").style.backgroundColor = "#FFB45C";
+        }
+
+        function startfan2()
+        {
+            document.getElementById("subdivision13").style.backgroundColor="#32CD32";
+        }
+
+        function stopfan2()
+        {
+            document.getElementById("subdivision13").style.backgroundColor = "#FFB45C";
+        }
+
+        
+        function startlight1()
+        {
+            document.getElementById("subdivision21").style.backgroundColor="#32CD32";
+        }
+
+        function stoplight1()
+        {
+            document.getElementById("subdivision21").style.backgroundColor = "#FFB45C";
+        }
+
+
+        function startlight2()
+        {
+            document.getElementById("subdivision22").style.backgroundColor="#32CD32";
+        }
+
+        function stoplight2()
+        {
+            document.getElementById("subdivision22").style.backgroundColor = "#FFB45C";
+        }
+
+
+        function starttank()
+        {
+            document.getElementById("subdivision23").style.backgroundColor="#32CD32";
+        }
+
+        function stoptank()
+        {
+            document.getElementById("subdivision23").style.backgroundColor = "#FFB45C";
+        }
+
+
+
+
+
+
         
         
         </script>
 
-        <script src="https://kit.fontawesome.com/695287ea8d.js" crossorigin="anonymous"></script>
+        
 
 </body>
 
