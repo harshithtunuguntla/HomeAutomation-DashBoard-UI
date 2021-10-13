@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+      
+      
+
+
+
+        <style>
+            
+            html, body{
+                padding: 0;
+                margin: 0;
+            }
+
+            .headerbox{
+                background-color: #FFB45C;
+                height: max-content;
+                text-align: center;
+                margin-top: -15px;
+                margin-left: 25%;
+                margin-right: 25%;
+                border-radius: 5%;
+            }
+
+            .headerboxheading{
+                margin-top:-55px;
+                font-size: 50px;
+            }
+
+
+            /* Whole Bottom Divison */
+
+            .wholedivision
+            {
+                margin-top: 2%;
+                display: inline-flex;
+                
+            }
+
+            /* Clock Division */
+
+            .clocksidedivision{
+                width: 20%;
+                margin-left: 80px;
+                margin-top: 3.5%;
+            }
+
+            .clockposition{
+                margin-left: 25%;
+                margin-top: 20%;
+            }
+
+            .timeposition{
+                margin-top: 5%;
+                margin-left: 42%;
+            }
+
+            .dateposition{
+                margin-left: 18%;
+            }
+
+            .temp_hum{
+                background-color: black;
+                color:#FBE46E;
+                width: 200px;
+                border-radius: 10%;
+                height: 130px;
+                padding: 5%;
+                margin-left: -33px;
+            }
+
+            .temperatureposition
+            {
+                text-align: center;
+                font-weight: 80;
+                font-size: 30px;
+                margin-top: 5%;
+            }
+
+            .humidityposition
+            {
+                text-align: center;
+                font-weight: 80;
+                font-size: 30px;
+            }
+
+            /* .timefontstyling{
+                size: 50px;
+            } */
+
+             /* Alerts Division */
+            
+             .alertsdivision{
+                margin-top: 35px;
+                margin-left: -8px;
+                display: inline-flex;
+            }
+
+            .alerticoncontent{
+                color:red;
+            }
+
+            .alerttextcontent{
+                margin-top: -2px;
+                margin-left: 5px;
+                color:red
+            }
+
+
+
+            /* Components Division */
+
+            .componentssidedivision{
+
+                margin-left: 170px;
+
+            }
+                    
+            .subdivision1{
+                display: inline-flex;
+            }
+
+            .subdivision11{
+                background-color: #FFB45C;
+                margin-left: 50px;
+                margin-right: 30px;
+                width: 250px;
+                height:250px;
+                border-radius: 20px;
+
+            }
+
+            .subdivision11inner{
+                margin-left:25px;
+                margin-top: 10px;
+            }
+
+            .subdivision11buttons{
+                margin-left: 95px;
+                display: inline-flex;
+            }
+
+            .subdivision11red{
+                color:red;
+            }
+
+            .subdivision11green{
+                margin-left: 20px;
+                color:green;
+            }
+
+
+            .subdivision12{
+                background-color: #FFB45C;
+                margin-left: 50px;
+                margin-right: 30px;
+                width: 250px;
+                height:250px;
+                border-radius: 20px;
+
+            }
+
+            .subdivision12inner{
+                margin-left:25px;
+                margin-top: 10px;
+            }
+
+            .subdivision12buttons{
+                margin-left: 95px;
+                display: inline-flex;
+            }
+
+            .subdivision12red{
+                color:red;
+            }
+
+            .subdivision12green{
+                margin-left: 20px;
+                color:green;
+            }
+
+            .subdivision13{
+                background-color: #FFB45C;
+                margin-left: 50px;
+                margin-right: 30px;
+                width: 250px;
+                height:250px;
+                border-radius: 20px;
+
+            }
+            .subdivision13inner{
+                margin-left:45px;
+                margin-top: 20px;
+            }
+
+            .subdivision13buttons{
+                margin-left: 95px;
+                margin-top: 10px;
+                display: inline-flex;
+            }
+
+            .subdivision13red{
+                color:red;
+            }
+
+            .subdivision13green{
+                margin-left: 20px;
+                color:green;
+            }
+
+            .subdivision2{
+                margin-top: 50px;
+                display: inline-flex;
+            }
+            .subdivision21{
+                background-color: #FFB45C;
+                margin-left: 50px;
+                margin-right: 30px;
+                width: 250px;
+                height:250px;
+                border-radius: 20px;
+
+            }
+            .subdivision21inner{
+                margin-left:25px;
+                margin-top: 10px;
+            }
+
+            .subdivision21buttons{
+                margin-left: 95px;
+                display: inline-flex;
+            }
+
+            .subdivision21red{
+                color:red;
+            }
+
+            .subdivision21green{
+                margin-left: 20px;
+                color:green;
+            }
+
+
+            .subdivision22{
+                background-color: #FFB45C;
+                margin-left: 50px;
+                margin-right: 30px;
+                width: 250px;
+                height:250px;
+                border-radius: 20px;
+
+            }
+            .subdivision22inner{
+                margin-left:25px;
+                margin-top: 10px;
+            }
+
+            .subdivision22buttons{
+                margin-left: 95px;
+                display: inline-flex;
+            }
+
+            .subdivision22red{
+                color:red;
+            }
+
+            .subdivision22green{
+                margin-left: 20px;
+                color:green;
+            }
+
+            .subdivision23{
+                background-color: #FFB45C;
+                margin-left: 50px;
+                margin-right: 30px;
+                width: 250px;
+                height:250px;
+                border-radius: 20px;
+                
+
+            }
+
+            .subdivision23flex
+            {
+                display: flex;
+            }
+
+            .subdivision23inner{
+                margin-top: 10px;
+            }
+
+            meter {
+            margin-top:90px;
+            width: 400px;
+            height: 40px;
+            margin-left: -30px;
+            transform: rotate(270deg);
+            }
+
+            meter::-webkit-meter-optimum-value {
+            background: rgb(0, 0, 0); /* Green */            
+            }
+
+
+            .subdivision23buttons{
+                margin-top: 5px;
+                margin-left: 95px;
+                display: inline-flex;
+            }
+
+            .subdivision23red{
+                color:red;
+            }
+
+            .subdivision23green{
+                margin-left: 20px;
+                color:green;
+            }
+        
+           
+
+
+
+        </style>
+
+</head>
+
+
+<body style="background-color:#FBE46E">
+
+
+    <div class="headerbox">
+        <div class="headerboxheading">
+            <p>Home Automation DashBoard</p1>
+        </div>
+    </div>
+
+
+
+    <!-- Divisions for clockdivision and componentdivision -->
+    <div class="wholedivision"> 
+        
+        <!-- Clock Division for the left portion of the webpage -->
+        <div class="clocksidedivision">
+           
+           <div class="clockposition">
+            <img src="images/clock.png" alt="Clock Image" width="150" height="150">
+           </div> 
+
+           <div class="timeposition">
+               <h2 id="replacetimehere">23:55:19</h2>
+           </div>
+
+           <div class="dateposition">
+            <h3 id="replacedatehere">October 12, 2021</h3>
+
+
+            <div class="temp_hum">
+                <div><p id="replacetemperaturehere" class="temperatureposition">38 °c</p></div>
+                <div><p id="replacehumidityhere" class="humidityposition">40 % HUMID</p></div>
+            </div>
+
+            
+            <div class="alertsdivision">
+
+                <span class="alerticoncontent"><i class="fas fa-exclamation-circle fa-lg"></i></span>
+                <p class="alerttextcontent">Water your plants</p>
+            
+
+            </div>
+
+
+        </div>
+
+        </div>
+
+        
+        <!-- Components division for the right portion of the webpage : Fans, Lights etx -->
+        <div class="componentssidedivision">
+            
+            <div class="subdivision1">
+
+                <div class="subdivision11">
+                    <img src="images/fan.png" alt="Clock Image" width="200" height="200" class="subdivision11inner">     
+                    <div class="subdivision11buttons">
+                        <span class="subdivision11red"><i class="fas fa-circle fa-lg"></i></span>
+                        <span class="subdivision11green"><i class="fas fa-circle fa-lg"></i></span>
+                    </div>       
+                </div>
+
+                <div class="subdivision12">
+                    <img src="images/fridge.png" alt="Clock Image" width="200" height="200" class="subdivision12inner"> 
+                    <div class="subdivision12buttons">
+                        <span class="subdivision12red"><i class="fas fa-circle fa-lg"></i></span>
+                        <span class="subdivision12green"><i class="fas fa-circle fa-lg"></i></span>
+                    </div>
+                </div>
+
+                <div class="subdivision13">
+                    <img src="images/table_fan.png" alt="Clock Image" width="180" height="180" class="subdivision13inner"> 
+                    <div class="subdivision13buttons">
+                        <span class="subdivision13red"><i class="fas fa-circle fa-lg"></i></span>
+                        <span class="subdivision13green"><i class="fas fa-circle fa-lg"></i></span>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="subdivision2">
+                <div class="subdivision21">
+                    <img src="images/bulb.png" alt="Clock Image" width="200" height="200" class="subdivision21inner"> 
+                    <div class="subdivision21buttons">
+                        <span class="subdivision21red"><i class="fas fa-circle fa-lg"></i></span>
+                        <span class="subdivision21green"><i class="fas fa-circle fa-lg"></i></span>
+                    </div>
+                </div>
+                <div class="subdivision22">
+                    <img src="images/bulb.png" alt="Clock Image" width="200" height="200" class="subdivision22inner"> 
+                    <div class="subdivision22buttons">
+                        <span class="subdivision22red"><i class="fas fa-circle fa-lg"></i></span>
+                        <span class="subdivision22green"><i class="fas fa-circle fa-lg"></i></span>
+                    </div>
+                </div>
+                <div class="subdivision23">
+                    <div class="subdivision23flex">
+                        <img src="images/water_tank.png" alt="Clock Image" width="200" height="200" class="subdivision23inner"> 
+                        <meter id="replacelevelhere" min="0" low="40" high="95" max="100" value="80"></meter>
+                    </div>
+                    <div class="subdivision23buttons">
+                        <span class="subdivision23red"><i class="fas fa-circle fa-lg"></i></span>
+                        <span class="subdivision23green"><i class="fas fa-circle fa-lg"></i></span>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    
+
+
+
+
+    <script>
+
+        
+        // Get Time using Java Script
+        function getTime(){
+            var today = new Date();
+            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            document.getElementById("replacetimehere").innerHTML = time;
+
+
+            var m = today.getMonth();
+
+            if(m==0)
+                month = "January"
+            else if(m==1)
+                month="February"
+            else if(m==2)
+                month="March"
+            else if(m==3)
+                month="April"
+            else if(m==4)
+                month="May"
+            else if(m==5)
+                month="June"
+            else if(m==6)
+                month="July"
+            else if(m==7)
+                month="August"
+            else if(m==8)
+                month="September"
+            else if(m==9)
+                month="October"
+            else if(m==10)
+                month="November"
+            else if(m==11)
+                month="December"
+            
+
+            var date = month +  ' ' + today.getDate()+ ', ' +  today.getFullYear()  ;
+            document.getElementById("replacedatehere").innerHTML = date;
+
+        }
+
+        setInterval(getTime,1000);
+
+        
+        
+        </script>
+
+        <script src="https://kit.fontawesome.com/695287ea8d.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
